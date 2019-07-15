@@ -12,7 +12,6 @@ namespace UDPObjectSync.UDPSync.UDP
     {
         private Socket _socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
         private EndPoint epFrom = new IPEndPoint(IPAddress.Any, 0);
-        private AsyncCallback recv = null;
         private const int bufSize = 8 * 1024;
         private State state = new State();
 
